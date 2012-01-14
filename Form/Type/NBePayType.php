@@ -18,9 +18,7 @@ class NBePayType extends FormType {
       ->add('domain', 'text')
       ->add('status', 'text')
       ->add('currency', 'text')
-      ->add('paydate', 'datetime', array(
-        'widget' => 'single_text',
-      ))
+      ->add('paydate', 'text')
       ->add('skey', 'text')
       ->add('channel', 'text');
   }

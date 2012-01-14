@@ -61,7 +61,7 @@ abstract class NBePayTransaction
   /**
    * @var datetime $paydate
    *
-   * @ORM\Column(name="paydate", type="datetime")
+   * @ORM\Column(name="paydate", type="string", length=19)
    */
   protected $paydate;
 
@@ -99,7 +99,6 @@ abstract class NBePayTransaction
    * @ORM\Column(name="session_id", type="string", length=255)
    */
   protected $session_id;
-
 
   /**
    * Set amount
