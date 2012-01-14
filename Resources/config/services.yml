@@ -1,0 +1,6 @@
+services:
+  nbepay:
+    class: Aizatto\Bundle\NBePayBundle\Entity\NBePay
+    arguments:
+      - %nbepay.merchant_id%
+      - %nbepay.verify_key%
